@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bikes website</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+	/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <!-- start here -->
+    <div class="container">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a
+              class="navbar-brand"
+              href="#"
+              style="color: #fff; font-weight: bold;"
+            >
+              <img src="img/logo.png" style=" width:75px;height: 50px;" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navCenter">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Bikes</a>
+              </li>
+              <li>
+                <a href="#">Gear</a>
+              </li>
+              <li>
+                <a href="#">Parts</a>
+              </li>
+              <li>
+                <a href="#">Tires</a>
+              </li>
+              <li>
+                <a href="#">Service-Info</a>
+              </li>
+              <li>
+                <a href="#">Catalogues</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#"><i class="fas fa-search"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Bikes</h1>
+          </div>
+        </div>
+        <div class="row filter ">
+          <div class="col-md-3">
+            <div class="sidebar-row">
+              <h3>Filter by:</h3>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="showAll">
+                <span>Show all</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <hr />
+            <div class="sidebar-row">
+              <h4>Gender</h4>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterMale">
+                <span>Male</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterFemale">
+                <span>Female</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <hr />
+            <div class="sidebar-row">
+              <h4>Brand</h4>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterLeGrand">
+                <span>LE GRAND BIKES</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterKross">
+                <span>KROSS</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterExplorer">
+                <span>EXPLORER</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterVisitor">
+                <span>VISITOR</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterPony">
+                <span>PONY</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterForce">
+                <span>FORCE</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterEbikes">
+                <span>E-BIKES</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+            <div class="sidebar-row">
+              <a href="#" id="filterIdeal">
+                <span>IDEAL</span>
+                <span class="badge pull-right">0</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row" id="bikeList"></div>
+          </div>
+        </div>
+	  </div>
+	  <div class="row footer">
+        <div class="col-md-3 share-icons">
+          <h2>Social share</h2>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/?hl=en" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="col-md-3">
+          <h2>Event info</h2>
+          <ul>
+            <li><a href="#">Enter Now</a></li>
+            <li><a href="#">Event Info</a></li>
+            <li><a href="#">Course Maps</a></li>
+            <li><a href="#">Race Pack</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Am I Registered?</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h2>Registration</h2>
+          <ul>
+            <li><a href="#">Volunteers</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Service Plus</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h2>Schedule</h2>
+          <ul>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Volunteers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	</div>
+	
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  background-color: #e7e7e7;
+  font-family: "Roboto", sans-serif;
+}
+.navCenter {
+  margin-left: 150px;
+}
+.container {
+  background-color: white;
+}
+hr {
+  color: black;
+}
+#myNavbar ul li a:hover {
+  color: orange;
+}
+#myNavbar ul li a {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+.sidebar-row {
+  width: 100%;
+}
+.scale {
+  color: orange;
+  font-weight: bold;
+}
+a:link {
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+img {
+  height: 130px;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.item a:link {
+  text-decoration: none;
+}
+.caption {
+  background-color: orange;
+  color: black;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+.footer .col-md-3:not(:first-child) {
+  border-left: 1px solid lightgrey;
+}
+.footer h2 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer ul li a {
+  color: black;
+  transition: all 0.15s ease;
+  font-size: 16px;
+}
+.footer ul li a:hover {
+  color: orange;
+  text-decoration: none;
+}
+.share-icons .fab {
+  color: white;
+}
+
+.share-icons a {
+  padding: 10px 15px;
+  background-color: orange;
+  transition: all 0.15s ease;
+  display: inline-block;
+}
+
+.share-icons a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.share-icons a:hover {
+  background-color: grey;
+}
